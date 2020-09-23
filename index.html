@@ -6,37 +6,36 @@
 	<title>APS1 WEB</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" href="img/coronavirus.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="CovidAPI.js"></script>
 </head>
-<nav class="navbar">
-      <ul>
-          <li>
-               <a  href="#home"><b>HOME</b></a>
-          </li>
-          <li >
-               <a  href="#casosBR"><b>CASOS BRASIL</b></a>
-          </li>
-          <li >
-               <a  href="#tabelaRJ"><b>TABELA RJ</b></a>
-          </li>  
-          <li >
-               <a  href="#mapa"><b>MAPA</b></a>
-          </li>      
-        </ul> 
-</nav>
-<body>
+<div class="topnav">
+  <a href="#home" class="active">APS WEB</a>
+  <!-- links de navegações (Menu escondido, aparecendo só depois que clicar com o mouse) -->
+  <div id="myLinks">
+    <a href="#casosBR">CASOS BRASIL</a>
+    <a href="#tabelaRJ">TABELA RJ</a>
+    <a href="#mapa">MAPA</a>
+  </div>
+  <!-- "menu Hamburguer " para alternar os links de navegações -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
+<body>
+<!--Primeira seção(banner principal)-->
 <section id="home">
     <div class="banner">
        <img src="img/banner.png" alt="">
     </div>    
 </section>
-<section id="casosBR">
-     <div class="video">
+  <div class="video">
                 <h2>REGISTRO COVID-19 MUNDIAL</h2>
                  <iframe width="50%" height="400" src="https://www.youtube.com/embed/NMre6IAAAiU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
            </div>
-    
+<!--Segunda seção(Tabela de registro de covid)-->
+<section id="casosBR">    
 	<h2>Casos COVID-19 BRASIL</h2>
 	<table border cellpadding="5px" cellspacing="0" ID="alter">
 		<thead>
@@ -57,6 +56,7 @@
 		</tbody>
 	</table>
 </section>
+<!--Terceira seção(Tabela casos Rio de Janeiro)-->
 <section id="tabelaRJ">	
 	<h2>Casos COVID-19 Rio de Janeiro</h2>
 	<table border cellpadding="5px" cellspacing="0" ID="alter">
@@ -71,6 +71,7 @@
 		</tbody>
 	</table>
 </section>
+<!--Quarta seção(Mapa)-->
 <section id="mapa">
 <h2>Mapa COVID-19</h2>
 	<iframe
@@ -78,9 +79,21 @@
 		width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
 		tabindex="0"></iframe>
 </section>
+<!--Rodapé do site-->
 <footer class="footer">
     <span>Copyright (c) 2020 APS1 WEB</span> <br/>
      <span >Todos os direitos reservados</span> 
-</footer>		
+</footer>
+<!--Código Javascript(Ativar o menu hamburguer)-->
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>		
 </body>
 </html>

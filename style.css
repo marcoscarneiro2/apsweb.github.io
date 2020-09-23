@@ -1,27 +1,53 @@
+/* Estilo do corpo do site(definir tamanho, altura,cor)*/
 body{
     margin: 0;
     font-family: 'Caviar Dreams';
     background-color: #433c3c;
 }
-.navbar{
-    background: rgba(5, 5, 5, 0.82);
-    text-align: center;
-    width: 100%;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    position: fixed;
-    z-index: 15;
-}
-.navbar li{
-    list-style-type: none;
-    display: contents; 
-}
-.navbar li a {
-    color: aliceblue;
-    text-decoration: none;
-    margin-left: 5%;
+/* Estilo do menu de navegação */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  width: 100%; 
+  z-index: 15;
 }
 
+/* Oculte os links dentro do menu de navegação (exceto para logotipo / home)*/
+.topnav #myLinks {
+  display: none;
+}
+
+/*Estilo dos Links do menu de navegação*/
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Estilo do menu hamburguer */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Adicionar uma cor de fundo cinza ao passar o mouse*/
+.topnav .icon:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*Estilo do link ativo (ou home / logotipo) */
+.active {
+  background-color: black;
+  color: white;
+}
+/* Estilo do Banner(definir tamanho, altura,cor)*/
 .banner{
     width: 100%;
     height: 700px;
@@ -33,26 +59,31 @@ body{
 .banner img{
     width: 100%;
 }
+/* Estilo do video(definir tamanho, altura,cor)*/
 .video{
     width:100%;
     margin-top: 5%;
     text-align: center;
     margin-bottom: 5%;
 }
+/* Estilo das tabelas(definir tamanho, altura,cor)*/
 #casosBR,#tabelaRJ,#mapa{
     width: 100%;
     background-color: #2e2828;
     height: auto;
-    padding-top: 1px;    
+    padding-top: 1px; 
+    text-align: center;
 }
-#casosBR h2,#tabelaRJ h2,#mapa h2{
+/* Estilo das fontes das tabelas(definir tamanho, altura,cor)*/
+#casosBR h2,#tabelaRJ h2,#mapa h2,.video h2{
     margin-left: 1%;
     color: white;
 }
-
+/* Estilo das tabelas(definir tamanho, altura,cor)*/
 table{
-    width: 100%;
+    width: 50%;
     margin-bottom: 20%;
+    margin-left: 25%;
 }
 #alter th{ /* Muda a cor do Th */
 	background: #5a1d05;
@@ -64,6 +95,7 @@ table{
     color: white;
     
 	} 
+/* Estilo do rodapé(definir tamanho, altura,cor)*/
 .footer{
     text-align: center;
     color: white;
