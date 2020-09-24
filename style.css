@@ -113,16 +113,20 @@ table{
   font-size: 35px;
     }
     .topnav i {
-  font-size: 40px;
+  font-size: 70px;
     }
     table{
     width: 90%;
     margin-left: 5%;
-    
+    font-size: 35px;    
     }
     .video iframe{
     width:90%;
     height:400px; 
     }
+    #casosBR h2,#tabelaRJ h2,#mapa h2,.video h2{
+    font-size: 35px;
+    color: white;
+}
 }
 
