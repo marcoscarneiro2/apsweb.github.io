@@ -75,9 +75,7 @@ body{
 }
 #texto img{
     width: 40%;
-    margin-top: 2%;
-    margin-left: 30%;
-    
+    margin: 2% 30% 0 30%;
 }
 #texto a{
     color: pink;
