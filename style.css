@@ -3,6 +3,7 @@ body{
     margin: 0;
     font-family: 'Caviar Dreams';
     background-color: #433c3c;
+    height: auto;
 }
 /* Estilo do menu de navegação */
 .topnav {
@@ -50,14 +51,16 @@ body{
 /* Estilo do Banner(definir tamanho, altura,cor)*/
 .banner{
     width: 100%;
-    height: 700px;
-    -webkit-background-size: cover;
+    max-height: 800px;
+    -webkit-background-size:cover ;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .banner img{
     width: 100%;
+    height: 800px;
+    
 }
 /*Estilo do texto*/
 #texto{
@@ -75,7 +78,7 @@ body{
 }
 #texto img{
     width: 40%;
-    margin: 2% 30% 0 30%;
+   margin: 2em 20em; 
 }
 #texto a{
     color: pink;
