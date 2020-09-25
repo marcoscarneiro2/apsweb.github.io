@@ -59,6 +59,53 @@ body{
 .banner img{
     width: 100%;
 }
+/*Estilo do texto*/
+#texto{
+    text-align: justify;
+    color: white;
+    font-size: 18px;
+    width: 80%;
+    margin-left: 10%;
+}
+/*Estilo do título do texto*/
+#texto h2{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#texto img{
+    width: 40%;
+    margin-top: 2%;
+    margin-left: 30%;
+    
+}
+#texto a{
+    color: pink;
+}
+/*Estilo do texto das vacinas(tamanho, cor, etc)*/
+#textovacina{
+    text-align: justify;
+    color: white;
+    font-size: 18px;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+/*Estilo do título do texto das vacinas*/
+#textovacina h2{
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+/*Estilo das imagens do texto da vacina*/
+#textovacina img{
+     width: 25%;
+    margin: 4% 0 5% 40%;
+}
+/*Estilo do link do texto das vacinas*/
+#textovacina a{
+     color: pink;
+}
 /* Estilo do video(definir tamanho, altura,cor)*/
 .video{
     width:100%;
@@ -93,11 +140,13 @@ table{
 	background: #5a1d05;
     color: white;
     padding: 5px;
+    border-radius: 10px 10px 10px 10px;
+
 	}
 #alter td{ /* Muda a cor do Td */
 	background: #33150a;
     color: white;
-    
+    border-radius: 10px 10px 10px 10px;
 	} 
 /* Estilo do rodapé(definir tamanho, altura,cor)*/
 .footer{
@@ -127,6 +176,16 @@ table{
     #casosBR h2,#tabelaRJ h2,#mapa h2,.video h2{
     font-size: 35px;
     color: white;
+}
+    #texto img{
+    width: 100%;
+    margin-top: 2%;
+    margin-left: 0%;
+    margin: 15% 0;
+}
+    #textovacina img{
+     width: 70%;
+    margin: 15% 0 15% 20%;
 }
 }
 
