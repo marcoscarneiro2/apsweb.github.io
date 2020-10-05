@@ -127,7 +127,7 @@ body{
     text-align: center;
 }
 /* Estilo das fontes das tabelas(definir tamanho, altura,cor)*/
-#casosBR h2,#tabelaRJ h2,#mapa h2,.video h2{
+#casosBR h2,#tabelaRJ h2,#mapa h2,.video h2,.coronamapa h2{
     margin-left: 1%;
     color: white;
 }
@@ -155,6 +155,12 @@ table{
     color: white;
     padding: 5px;
     background-color: #2e2828;
+}
+.coronamapa{
+    margin-top: 5%;
+    width: 100%;
+    height: 600px;
+    text-align: center;
 }
 /*Responsividade(modo mobile)*/
 @media only screen and (max-width:980px){
