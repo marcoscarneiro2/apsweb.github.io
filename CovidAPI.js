@@ -1,3 +1,30 @@
+function Canada(){
+    var data;
+    fetch("https://covid19-brazil-api.now.sh/api/report/v1/Canada", {
+      method: "POST",
+      body: data,
+    })
+      .then(function (res) {
+        return res.json();
+      })
+      .then(function (data) {
+        var pais = JSON.stringify(data.data.country);
+        var paisSemAspas = pais.replace(/^"/g, "").replace(/"$/g, "");
+        var casos = JSON.stringify(data.data.cases);
+        var mortes = JSON.stringify(data.data.deaths);
+        alert(
+          "O " +
+            paisSemAspas +
+            " tem uma quantidade de casos de " +
+            casos +
+            " com uma quantidade de mortes de " +
+            mortes
+        );
+      })
+      .catch((err) => console.error(err));    
+}
+
+
 function DadosEstados() {
   var data;
   fetch("https://covid19-brazil-api.now.sh/api/report/v1", {
