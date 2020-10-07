@@ -1,6 +1,9 @@
-function Canada(){
+// FUNCOES PARA O MAPA
+
+function usa(){
     var data;
-    fetch("https://covid19-brazil-api.now.sh/api/report/v1/Canada", {
+    fetch("https://covid19-brazil-api.now.sh/api/report/v1/us", {
+
       method: "POST",
       body: data,
     })
@@ -50,6 +53,32 @@ function brasil(){
       .catch((err) => console.error(err));    
 }
 
+function china(){
+    var data;
+    fetch("https://covid19-brazil-api.now.sh/api/report/v1/china", {
+      method: "POST",
+      body: data,
+    })
+      .then(function (res) {
+        return res.json();
+      })
+      .then(function (data) {
+        var pais = JSON.stringify(data.data.country);
+        var paisSemAspas = pais.replace(/^"/g, "").replace(/"$/g, "");
+        var casos = JSON.stringify(data.data.cases);
+        var mortes = JSON.stringify(data.data.deaths);
+        alert(
+          "O " +
+            paisSemAspas +
+            " tem uma quantidade de casos de " +
+            casos +
+            " com uma quantidade de mortes de " +
+            mortes
+        );
+      })
+      .catch((err) => console.error(err));    
+}
+
 function russia(){
     var data;
     fetch("https://covid19-brazil-api.now.sh/api/report/v1/russia", {
@@ -76,6 +105,60 @@ function russia(){
       .catch((err) => console.error(err));    
 }
 
+function Canada(){
+    var data;
+    fetch("https://covid19-brazil-api.now.sh/api/report/v1/Canada", {
+      method: "POST",
+      body: data,
+    })
+      .then(function (res) {
+        return res.json();
+      })
+      .then(function (data) {
+        var pais = JSON.stringify(data.data.country);
+        var paisSemAspas = pais.replace(/^"/g, "").replace(/"$/g, "");
+        var casos = JSON.stringify(data.data.cases);
+        var mortes = JSON.stringify(data.data.deaths);
+        alert(
+          "O " +
+            paisSemAspas +
+            " tem uma quantidade de casos de " +
+            casos +
+            " com uma quantidade de mortes de " +
+            mortes
+        );
+      })
+      .catch((err) => console.error(err));    
+}
+
+function australia(){
+    var data;
+    fetch("https://covid19-brazil-api.now.sh/api/report/v1/australia", {
+      method: "POST",
+      body: data,
+    })
+      .then(function (res) {
+        return res.json();
+      })
+      .then(function (data) {
+        var pais = JSON.stringify(data.data.country);
+        var paisSemAspas = pais.replace(/^"/g, "").replace(/"$/g, "");
+        var casos = JSON.stringify(data.data.cases);
+        var mortes = JSON.stringify(data.data.deaths);
+        alert(
+          "O " +
+            paisSemAspas +
+            " tem uma quantidade de casos de " +
+            casos +
+            " com uma quantidade de mortes de " +
+            mortes
+        );
+      })
+      .catch((err) => console.error(err));    
+}
+
+// FUNCOES PARA AS TABELAS DOS ESTADOS
+
 function DadosEstados() {
   var data;
   fetch("https://covid19-brazil-api.now.sh/api/report/v1", {
@@ -96,6 +179,8 @@ function DadosEstados() {
     })
     .catch((err) => console.error(err));
 }
+
+// FUNCOES PARA A TABELA DO RJ
 
 function DadosRJ() {
   var data;
@@ -132,8 +217,6 @@ function DadosRJ() {
     })
     .catch((err) => console.error(err));
 }
-
-
 
 DadosEstados();
 DadosRJ();
