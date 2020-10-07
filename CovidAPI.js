@@ -3,6 +3,7 @@
 function usa(){
     var data;
     fetch("https://covid19-brazil-api.now.sh/api/report/v1/us", {
+
       method: "POST",
       body: data,
     })
@@ -158,7 +159,6 @@ function australia(){
 
 // FUNCOES PARA AS TABELAS DOS ESTADOS
 
-
 function DadosEstados() {
   var data;
   fetch("https://covid19-brazil-api.now.sh/api/report/v1", {
@@ -217,8 +217,6 @@ function DadosRJ() {
     })
     .catch((err) => console.error(err));
 }
-
-
 
 DadosEstados();
 DadosRJ();
